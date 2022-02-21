@@ -94,10 +94,14 @@ plt.show()
 
 
 plt.figure(4)
+plt.xlabel('MT19937 Generated values')
+plt.ylabel('MT19937 Generated values (shifted by 500 points)')
 plt.scatter(numsMT1_ori, numsMT1_shf, marker= 'x')
 plt.show()
 
 plt.figure(5)
+plt.xlabel('MT19937 Generated values')
+plt.ylabel('MT19937 Generated values (shifted by 500 points)')
 plt.scatter(numsMT2_ori, numsMT2_shf, marker= 'x')
 plt.show()
 
