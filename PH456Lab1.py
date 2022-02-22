@@ -52,13 +52,13 @@ plt.show()
 
 E = N/m #Calculating the expectation value
 
-# Setting up a for loop for a Chi-Squared test
-counts = [counts1, counts2, counts3, counts4] #Declaring a counter array to later display the Chi-squared value of all 4 plots at once
+# Setting up a for loop for a Chi-Square test
+counts = [counts1, counts2, counts3, counts4] #Declaring a counter array to later display the Chi-square value of all 4 plots at once
 Chi = [0,] * 4 #Declaring an array of four 0s
 
 for i in range(4) :
     for x in counts[i]:
-            Chi[i] += ((x-E)**2)/E #Assigning each Chi-squared value to the array 'Chi'
+            Chi[i] += ((x-E)**2)/E #Assigning each Chi-square value to the array 'Chi'
             
 #Defining a function for testing correlation between the original set of values and a rotated set of values of the histograms 
 def shift(x, shf):
@@ -247,7 +247,7 @@ plt.axhline(y=750, color='green', linestyle='-')
 plt.axhline(y=250, color='r', linestyle='-')
 plt.plot(left_arrPC75)
 plt.plot(right_arrPC25)
-plt.legend(['Equilibrium at 750 for right-hand side','Equilibrium at 750 for left-hand side','Particles on the left', 'Particles on the right'])
+plt.legend(['Equilibrium at 750 for right-hand side','Equilibrium at 250 for left-hand side','Particles on the left', 'Particles on the right'])
 plt.show()
 
 total = 1000
@@ -271,7 +271,7 @@ plt.axhline(y=750, color='green', linestyle='-')
 plt.axhline(y=250, color='r', linestyle='-')
 plt.plot(left_arrMT75)
 plt.plot(right_arrMT25)
-plt.legend(['Equilibrium at 750 for right-hand side','Equilibrium at 750 for left-hand side','Particles on the left', 'Particles on the right'])
+plt.legend(['Equilibrium at 750 for right-hand side','Equilibrium at 250 for left-hand side','Particles on the left', 'Particles on the right'])
 plt.show()
 
 
